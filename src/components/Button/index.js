@@ -1,11 +1,13 @@
-import React from 'react'
-import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import { IconMin, IconPlus } from '../../assets'
+import React from "react";
+import { Image, StyleSheet, TouchableOpacity } from 'react-native';
+import { IconMin, IconPlus } from "../../assets";
 
-const Button = ({ secondary }) => {
+const Button = ({secondary}) => {
     return (
         <TouchableOpacity style={styles.container}>
-            <Image style={styles.img} source={secondary === 'IconMin' ? IconMin : IconPlus} />
+            <Image style={styles.img}
+                source={secondary === 'IconMin' ? IconMin : IconPlus}
+            />
         </TouchableOpacity>
     )
 }
@@ -15,13 +17,12 @@ const styles = StyleSheet.create({
     img: {
         width: 25,
         height: 25,
-        zIndex: 10,
+        zIndex: 10
     },
-    container: {
+    container:{
         backgroundColor: 'white',
         padding: 10,
         borderRadius: 100,
-        marginBottom: 10
+        marginBottom : 10
     }
-
 })

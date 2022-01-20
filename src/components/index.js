@@ -1,7 +1,7 @@
+import Search from "./Search";
 import Button from "./Button";
-import Search from "./search";
 
-export {
-    Button,
-    Search
+export { 
+    Search,
+    Button
 }

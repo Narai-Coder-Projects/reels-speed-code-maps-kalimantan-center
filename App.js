@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
 import Button from './src/components/Button';
-import Search from './src/components/Search';
+import Search from './src/components/Search'
 
 const App = () => {
   return (
@@ -15,19 +15,16 @@ const App = () => {
             latitude: -1.2195364,
             longitude: 113.321844,
             latitudeDelta: 2,
-            longitudeDelta: 2,
+            longitudeDelta: 2
           }}
-        >
-        </MapView>
+        ></MapView>
       </View>
-
       <View style={styles.search}>
-       <Search />
+        <Search />
       </View>
-
       <View style={styles.button}>
         <Button />
-        <Button secondary={'IconMin'}/>
+        <Button secondary={'IconMin'} />
       </View>
     </>
   )
@@ -35,11 +32,8 @@ const App = () => {
 export default App;
 
 const styles = StyleSheet.create({
-  button: {
-    position: 'absolute',
-    right: 14,
-    top: 70,
-    zIndex: 10,
+  flex: {
+    flex: 1
   },
   search: {
     height: 45,
@@ -48,15 +42,12 @@ const styles = StyleSheet.create({
     top: 8,
     right: 2,
     zIndex: 10,
-    flexDirection: 'row',
+    flexDirection: 'row'
   },
-  flex: {
-    flex: 1
-  },
-  
-  zIndex: {
-    zIndex: 10,
-    backgroundColor: '#fff',
+  button: {
+    position: 'absolute',
+    right: 14,
+    top: 70,
+    zIndex: 10
   }
-
 })
